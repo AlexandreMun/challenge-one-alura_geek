@@ -1,0 +1,17 @@
+.banner__text {
+  position: absolute;
+  top: 40%;
+  left: 9.5rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: white;
+}
+
+.banner__title {
+  font-size: 3.25rem;
+}
+
+.banner__subtitle {
+  font-size: 1.375rem;
+  margin-top: 1rem;
+}
