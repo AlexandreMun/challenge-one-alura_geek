@@ -1,0 +1,9 @@
+.form__btn {
+  cursor: pointer; 
+  background: var(--primary-blue);
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}

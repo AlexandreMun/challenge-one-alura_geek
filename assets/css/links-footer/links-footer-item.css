@@ -1,0 +1,12 @@
+.links-footer__item {
+  margin-bottom: 1.5rem;
+}
+
+.links-footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.links-footer__item a {
+  text-decoration: none;
+  color: var(--font-gray);
+}

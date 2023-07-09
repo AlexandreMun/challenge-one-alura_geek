@@ -1,0 +1,6 @@
+.product__view {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-size: 1rem;
+  font-weight: 700;
+}

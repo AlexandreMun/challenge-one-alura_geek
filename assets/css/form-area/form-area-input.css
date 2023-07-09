@@ -1,0 +1,28 @@
+.form__area__input {
+  width: 35rem;
+  height: 3.5rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--font-gray);
+  padding: .25rem .75rem;
+}
+
+.form__area__input + span {
+  position: absolute;
+  left: 0;
+  color: #a2a2a2;
+  font-size: 1rem;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form__area__input:focus + span {
+  top: -10%;
+  font-size: .75rem;
+}
+
+.form__area__input:valid + span {
+  top: -10%;
+  font-size: .75rem;
+}

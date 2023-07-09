@@ -1,0 +1,6 @@
+.product__title {
+  font-size: .875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: var(--font-gray);
+}

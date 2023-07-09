@@ -1,0 +1,7 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-blue);
+  padding: 4rem 9.5rem;
+}

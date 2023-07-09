@@ -1,0 +1,36 @@
+.form__area__textarea {
+  width: 35rem;
+  height: 5.375rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--font-gray);
+  padding: 1.75rem .75rem;
+  resize: none;
+}
+
+.form__area__textarea + span {
+  position: absolute;
+  left: 0;
+  color: #a2a2a2;
+  font-size: 1rem;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.form__area__textarea:target {
+  font-size: 20rem;
+}
+
+.form__area__textarea:focus + span {
+  top: -5%;
+  font-size: .75rem;
+  margin-bottom: 2rem;
+}
+
+.form__area__textarea:valid + span {
+  top: -5%;
+  font-size: .75rem;
+  margin-bottom: 1rem;
+}

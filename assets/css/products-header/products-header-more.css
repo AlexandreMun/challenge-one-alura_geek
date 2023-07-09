@@ -1,0 +1,11 @@
+.products__header__more__text {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-blue);
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.products__header__more i {
+  color: var(--primary-blue);
+}
