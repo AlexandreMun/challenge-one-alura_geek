@@ -9,6 +9,13 @@
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .banner__btn {
+    margin-top: .5rem;
+  }
+  
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .banner__btn {
     padding: .75rem 1rem;

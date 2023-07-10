@@ -7,6 +7,17 @@
   padding-bottom: 4rem;
 }
 
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .products-container {
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  
+  .products-container:last-child {
+    padding-bottom: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .products-container {
     padding: 0 2rem;

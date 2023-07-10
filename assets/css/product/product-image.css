@@ -3,6 +3,12 @@
   height: 10.875rem;
 }
 
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .product__image {
+    width: 9.75rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .product__image {
     width: 10.25rem;

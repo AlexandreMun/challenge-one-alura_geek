@@ -4,7 +4,7 @@
   border: none;
   font-size: 1rem;
   color: var(--font-gray);
-  padding: 1.75rem .75rem;
+  padding: 1.75rem 0 0 .75rem;
   resize: none;
 }
 
@@ -33,6 +33,12 @@
   top: -5%;
   font-size: .75rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .form__area__textarea {
+    width: 19.75rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

@@ -6,6 +6,16 @@
   padding: 4rem 9.5rem;
 }
 
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contact {
     padding: 2rem;
