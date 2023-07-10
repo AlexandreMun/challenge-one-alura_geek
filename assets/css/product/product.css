@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product:nth-child(5), .product:nth-child(6) {
+    display: none;
+  }
+}

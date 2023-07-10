@@ -1,7 +1,23 @@
 .contact {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   background-color: var(--secondary-blue);
   padding: 4rem 9.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "right-top left"
+      "right-down left";
+  }
+
+  .form {
+    grid-area: left;
+  }
 }

@@ -7,3 +7,10 @@
   font-size: 1rem;
   font-weight: 400;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__btn {
+    padding: .75rem 1rem;
+  }
+  
+}

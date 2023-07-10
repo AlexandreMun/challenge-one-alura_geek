@@ -26,3 +26,10 @@
   top: -10%;
   font-size: .75rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__area__input {
+    width: 27.125rem;
+  }
+  
+}

@@ -34,3 +34,10 @@
   font-size: .75rem;
   margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__area__textarea {
+    width: 27.125rem;
+  }
+  
+}

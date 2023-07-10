@@ -8,3 +8,9 @@
   font-weight: 400;
   margin-top: 1rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner__btn {
+    padding: .75rem 1rem;
+  }
+}
