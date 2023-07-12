@@ -1,5 +1,5 @@
-.form__area__input {
-  width: 35rem;
+.login__area__input {
+  width: 25.6875rem;
   height: 3.5rem;
   border: none;
   font-size: 1rem;
@@ -8,7 +8,7 @@
   box-shadow: 0px 2px 0px 0px rgba(200,200,200,1);
 }
 
-.form__area__input + span {
+.login__area__input + span {
   position: absolute;
   left: 0;
   color: #a2a2a2;
@@ -18,26 +18,26 @@
   transition: 0.5s;
 }
 
-.form__area__input:focus + span {
+.login__area__input:focus + span {
   top: -10%;
   font-size: .75rem;
 }
 
-.form__area__input:valid + span {
+.login__area__input:valid + span {
   top: -10%;
   font-size: .75rem;
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
-  .form__area__input {
-    width: 19.75rem;
+  .login__area__input {
+    width: 17.1875rem;
   }
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .form__area__input {
-    width: 27.125rem;
+  .login__area__input {
+    width: 17.1875rem;
   }
   
 }

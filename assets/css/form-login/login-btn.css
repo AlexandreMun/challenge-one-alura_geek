@@ -1,0 +1,24 @@
+.form__login__btn {
+  cursor: pointer; 
+  background: var(--primary-blue);
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 26.4375rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .form__login__btn {
+    width: 6.8125rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__login__btn {
+    width: 6.8125rem;
+  }
+  
+}
