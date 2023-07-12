@@ -1,6 +1,6 @@
-.container, .__login {
+.form__product {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5.75rem 0;
 }

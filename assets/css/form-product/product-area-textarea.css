@@ -1,0 +1,50 @@
+.product__area__textarea {
+  width: 34.25rem;
+  height: 5.375rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--font-gray);
+  padding: 1.75rem 0 0 .75rem;
+  resize: none;
+  box-shadow: 0px 2px 0px 0px rgba(200,200,200,1);
+}
+
+.product__area__textarea + span {
+  position: absolute;
+  left: 0;
+  color: #a2a2a2;
+  font-size: 1rem;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.product__area__textarea:target {
+  font-size: 20rem;
+}
+
+.product__area__textarea:focus + span {
+  top: -5%;
+  font-size: .75rem;
+  margin-bottom: 2rem;
+}
+
+.product__area__textarea:valid + span {
+  top: -5%;
+  font-size: .75rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .product__area__textarea {
+    width: 19.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product__area__textarea {
+    width: 43.25rem;
+  }
+  
+}

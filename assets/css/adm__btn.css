@@ -1,0 +1,20 @@
+.adm__btn {
+  cursor: pointer; 
+  padding: .75rem;
+  border: 1px solid var(--primary-blue);
+  background: none;
+  font-size: 1rem;
+  color: var(--primary-blue);
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .adm__btn {
+    padding: .75rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .adm__btn {
+    padding: .75rem 1rem;
+  }
+}
