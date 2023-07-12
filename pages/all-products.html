@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../assets/css/product/product-icons.css" />
     <link rel="stylesheet" href="../assets/css/product/product-title.css" />
     <link rel="stylesheet" href="../assets/css/product/product-price.css" />
-    <link rel="stylesheet" href="../assets/css/product/product-view.css" />
+    <link rel="stylesheet" href="../assets/css/product/product-code.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
     <link rel="stylesheet" href="../assets/css/logo-contact.css" />
@@ -100,10 +100,10 @@
       <section class="products-container--all">
         <div class="products__header--all">
           <h2 class="products__header__title">Todos os Produtos</h2>
-          <button class="products__header__btn">Adicionar produto</button>
+          <a class="products__header__btn" href="./new-product.html">Adicionar produto</a>
         </div>
-        <div class="products--all">
-          <div class="product--all">
+        <ul class="products--all" data-list>
+          <!-- <li class="product--all">
             <div class="product__image-icons">
               <img src="../assets/img/sw1.png" alt="" class="product__image" />
               <div class="product__icons">
@@ -122,8 +122,8 @@
             <h2 class="product__title">Produto XYZ</h2>
             <p class="product__price">R$ 60,00</p>
             <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
+          </li>
+          <li class="product--all">
             <div class="product__image-icons">
               <img src="../assets/img/sw2.png" alt="" class="product__image" />
               <div class="product__icons">
@@ -142,328 +142,8 @@
             <h2 class="product__title">Produto XYZ</h2>
             <p class="product__price">R$ 60,00</p>
             <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw3.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw4.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw5.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw6.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c1.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c2.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c3.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c4.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c5.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/c6.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d1.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d2.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d3.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d4.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d5.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-          <div class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/d6.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </div>
-        </div>
+          </li> -->
+        </ul>
       </section>
     </main>
 
@@ -510,5 +190,9 @@
         <p>2023</p>
       </div>
     </footer>
+    
+    <script type="module" src="../assets/js/connectApi.js"></script>
+    <script type="module" src="../assets/js/showProducts.js"></script>
+
   </body>
 </html>

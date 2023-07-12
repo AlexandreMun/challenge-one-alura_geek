@@ -5,6 +5,7 @@
   background: none;
   font-size: 1rem;
   color: var(--primary-blue);
+  text-decoration: none;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   .adm__btn {

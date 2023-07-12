@@ -1,0 +1,10 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "titulo": "teste",
+      "preco": "R$ 20,00",
+      "imagem": "https://i.ibb.co/3N0qpYy/sw1.png"
+    }
+  ]
+}
