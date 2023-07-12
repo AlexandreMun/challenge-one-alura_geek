@@ -1,0 +1,14 @@
+.product__icons {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.product__delete {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.product__edit {
+  cursor: pointer;
+}

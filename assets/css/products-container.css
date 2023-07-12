@@ -7,6 +7,10 @@
   padding-bottom: 4rem;
 }
 
+.products-container--all {
+  padding: 4rem 9.5rem;
+}
+
 @media screen and (min-width: 0) and (max-width: 767px) {
   .products-container {
     padding: 0 1rem;
@@ -15,6 +19,10 @@
   
   .products-container:last-child {
     padding-bottom: 1rem;
+  }
+
+  .products-container--all {
+    padding: 2rem;
   }
 }
 
@@ -26,5 +34,9 @@
   
   .products-container:last-child {
     padding-bottom: 2rem;
+  }
+
+  .products-container--all {
+    padding: 2rem;
   }
 }
