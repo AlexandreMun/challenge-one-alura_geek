@@ -24,7 +24,15 @@ async function createProducts(titulo, preco, imagem, categoria, descricao) {
   return conexaoConvertida
 }
 
+async function searchProducts(term) {
+  const conexao = await fetch(`http://localhost:3000/produtos?q=${term}`)
+  const conexaoConvertida = await conexao.json()
+
+  return conexaoConvertida
+}
+
 export const connectApi = {
   showVideos,
   createProducts,
+  searchProducts
 }
