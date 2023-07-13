@@ -24,4 +24,4 @@ async function searchVideo(event) {
   });
 }
 
-btnSearch.addEventListener("click", (event) => searchVideo(event));
+btnSearch.addEventListener("click", (event) => searchVideo(event)); 

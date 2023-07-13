@@ -4,6 +4,12 @@
   right: 0.75rem;
 }
 
+.product__icons button {
+  background-color: transparent;
+  border: none;
+}
+
+
 .product__delete {
   margin-right: 20px;
   cursor: pointer;
@@ -12,3 +18,4 @@
 .product__edit {
   cursor: pointer;
 }
+

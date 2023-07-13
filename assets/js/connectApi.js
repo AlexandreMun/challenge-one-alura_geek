@@ -31,8 +31,22 @@ async function searchProducts(term) {
   return conexaoConvertida
 }
 
+async function deleteProducts(id) {
+  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-type": "application/json",
+    },
+  }
+  )
+  const conexaoConvertida = await conexao.json()
+
+  return conexaoConvertida
+}
+
 export const connectApi = {
   showVideos,
   createProducts,
-  searchProducts
+  searchProducts,
+  deleteProducts
 }

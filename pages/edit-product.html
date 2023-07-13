@@ -8,35 +8,14 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/adm__btn.css" />
     <link rel="stylesheet" href="../assets/css/container.css" />
-    <link rel="stylesheet" href="../assets/css/banner/banner.css" />
-    <link rel="stylesheet" href="../assets/css/banner/banner-image.css" />
-    <link rel="stylesheet" href="../assets/css/banner/banner-text.css" />
-    <link rel="stylesheet" href="../assets/css/banner/banner-button.css" />
-    <link rel="stylesheet" href="../assets/css/products-container.css" />
-    <link
-      rel="stylesheet"
-      href="../assets/css/products-header/products-header.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../assets/css/products-header/products-header-title.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../assets/css/products-header/products-header-btn.css"
-    />
-    <link rel="stylesheet" href="../assets/css/products.css" />
-    <link rel="stylesheet" href="../assets/css/product/product.css" />
-    <link
-      rel="stylesheet"
-      href="../assets/css/product/product-image-icons.css"
-    />
-    <link rel="stylesheet" href="../assets/css/product/product-image.css" />
-    <link rel="stylesheet" href="../assets/css/product/product-icons.css" />
-    <link rel="stylesheet" href="../assets/css/product/product-title.css" />
-    <link rel="stylesheet" href="../assets/css/product/product-price.css" />
-    <link rel="stylesheet" href="../assets/css/product/product-code.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/form-product.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/product-title.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/product-area.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/product-area-input.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/product-area-textarea.css" />
+    <link rel="stylesheet" href="../assets/css/form-product/product-btn.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
     <link rel="stylesheet" href="../assets/css/logo-contact.css" />
@@ -84,9 +63,8 @@
               name=""
               placeholder="O que deseja encontrar?"
               class="search__form__input"
-              data-search
             />
-            <button type="submit" class="search__form__btn" data-btn-search>
+            <button type="submit" class="search__form__btn">
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </form>
@@ -95,64 +73,45 @@
       <button class="search__btn">
         <i class="fa fa-search" aria-hidden="true"></i>
       </button>
+      <a href="../pages/all-products.html" class="adm__btn">
+        Menu Administrador
+      </a>
     </header>
 
-    <main class="container">
-      <section class="products-container--all">
-        <div class="products__header--all">
-          <h2 class="products__header__title">Todos os Produtos</h2>
-          <a class="products__header__btn" href="./new-product.html">Adicionar produto</a>
+    <main class="container __new">
+      <form class="form__product" data-form>
+        <h2 class="product__title">Adicionar novo produto</h2>
+        <div class="product__area">
+          <input class="product__area__input" type="text" id="nome" data-imagem required />
+          <span>URL da imagem</span>
         </div>
-
-        <ul class="products--all" data-list>
-          <!-- <p id="test" data-id>1</p> -->
-          
-          <!-- <li class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw1.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </li>
-          <li class="product--all">
-            <div class="product__image-icons">
-              <img src="../assets/img/sw2.png" alt="" class="product__image" />
-              <div class="product__icons">
-                <img
-                  src="../assets/img/delete.png"
-                  alt=""
-                  class="product__delete"
-                />
-                <img
-                  src="../assets/img/edit.png"
-                  alt=""
-                  class="product__edit"
-                />
-              </div>
-            </div>
-            <h2 class="product__title">Produto XYZ</h2>
-            <p class="product__price">R$ 60,00</p>
-            <p class="product__code">#1111111</p>
-          </li> -->
-        </ul>
-    
-
-      </section>
+        <div class="product__area">
+          <input class="product__area__input" type="text" id="nome" data-categoria required />
+          <span>Categoria</span>
+        </div>
+        <div class="product__area">
+          <input class="product__area__input" type="text" id="nome" data-titulo required />
+          <span>Nome do produto</span>
+        </div>
+        <div class="product__area">
+          <input class="product__area__input" type="text" id="nome" data-preco required />
+          <span>Preço do produto</span>
+        </div>
+        <div class="product__area">
+          <textarea
+            class="product__area__textarea"
+            rows="5"
+            cols="40"
+            id="mensagem"
+            name="mensagem"
+            required
+            data-descricao
+          ></textarea>
+          <span>Descrição do produto</span>
+        </div>
+        <button class="product__btn" id="product__btn" type="submit">Editar produto</button>
+      </form>
     </main>
-
 
     <footer class="footer">
       <div class="contact">
@@ -197,11 +156,8 @@
         <p>2023</p>
       </div>
     </footer>
-    
-    <script type="module" src="../assets/js/connectApi.js"></script>
-    <script type="module" src="../assets/js/showProducts.js"></script>
-    <script type="module" src="../assets/js/searchProduct.js"></script>
-    <script type="module" src="../assets/js/deleteProduct.js"></script>
+
+    <script type="module" src="../assets/js/createProduct.js"></script>
 
   </body>
 </html>
