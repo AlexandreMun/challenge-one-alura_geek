@@ -6,13 +6,14 @@ async function deleteProduct(event) {
   const element = event.target;
   let selectedId;
 
-  if (element.id == "data-delete")
+  if (element.id === "data-delete") {
     selectedId =
       element.parentNode.parentNode.parentNode.parentNode.getAttribute(
         "data-id"
       );
 
-  await connectApi.deleteProducts(selectedId);
+    await connectApi.deleteProducts(selectedId);
+  }
 }
 
 list.addEventListener("click", async (event) => deleteProduct(event));

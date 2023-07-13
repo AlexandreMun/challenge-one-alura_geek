@@ -7,25 +7,27 @@ export default function createCard(id, titulo, preco, imagem) {
   product.className = "product--all";
   product.innerHTML = `
     <div class="product__image-icons">
-    <img src="${imagem}" alt="" class="product__image" />
+      <img src="${imagem}" alt="" class="product__image" />
       <div class="product__icons">
         <button>
-        <img
-          src="../assets/img/delete.png"
-          alt=""
-          class="product__delete"
-          id="data-delete"
-        />
+          <img
+            src="../assets/img/delete.png"
+            alt=""
+            class="product__delete"
+            id="data-delete"
+          />
         </button>
-        <img
-          src="../assets/img/edit.png"
-          alt=""
-          class="product__edit"
-          id="data-edit"
-        />
+        <button>
+          <img
+            src="../assets/img/edit.png"
+            alt=""
+            class="product__edit"
+            id="data-edit"
+          />
+        </button>
       </div>
     </div>
-    <h2 class="product__title">${titulo}</h2>
+    <h2 class="product__title" data-title="${titulo}">${titulo}</h2>
     <p class="product__price">${preco}</p>
     <p class="product__code" value="${id}">#${id}</p>
   `;
