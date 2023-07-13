@@ -1,0 +1,18 @@
+.details__img {
+  width: 35rem;
+  height: 25.1875rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+.details__img {
+  width: fit-content;
+  height: 12.125rem;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.details__img {
+  width: 15.875rem;
+  height: 10.25rem;
+}
+}

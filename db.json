@@ -4,7 +4,9 @@
       "id": 1,
       "titulo": "teste",
       "preco": "R$ 20,00",
-      "imagem": "https://i.ibb.co/3N0qpYy/sw1.png"
+      "imagem": "https://i.ibb.co/3N0qpYy/sw1.png",
+      "categoria": "star wars",
+      "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
     }
   ]
 }

@@ -1,0 +1,16 @@
+.info__desc {
+  font-size: 1rem;
+  width: 35rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .info__desc {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info__desc {
+    width: 27.125rem;
+  }
+}

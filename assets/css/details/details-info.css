@@ -1,0 +1,9 @@
+.details__info {
+  color: var(--font-gray);
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .details__info {
+    margin-top: 1rem;
+  }
+}
