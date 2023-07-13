@@ -1,5 +1,5 @@
 {
-  "produto": [
+  "produtos": [
     {
       "id": 1,
       "titulo": "teste",
@@ -7,6 +7,14 @@
       "imagem": "https://i.ibb.co/3N0qpYy/sw1.png",
       "categoria": "star wars",
       "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+      "titulo": "teste 2",
+      "preco": "R$ 21,99",
+      "imagem": "https://i.ibb.co/61CyYvX/sw2.png",
+      "categoria": "star wars",
+      "descricao": "qfwqwfeghljk qjklwf n flqkgq vgjlqwfn c fwqj jqm fqwk kfq fkn qkc akf qwlf qwfg",
+      "id": 2
     }
   ]
 }
