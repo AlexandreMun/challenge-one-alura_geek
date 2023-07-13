@@ -31,7 +31,7 @@ async function searchProducts(id) {
   return conexaoConvertida;
 }
 
-async function biid(id) {
+async function selectById(id) {
   const conexao = await fetch(`http://localhost:3000/produtos/${id}`);
   const conexaoConvertida = await conexao.json();
 

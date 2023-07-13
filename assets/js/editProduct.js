@@ -1,17 +1,11 @@
 import { connectApi } from "./connectApi.js";
 
 const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("id");
-
+const idUrl = urlParams.get("id");
 const formData = document.querySelector("[data-edit");
 
-
-// function fillForm() {
-
-// }
-
 async function getProduct() {
-  const product = await connectApi.biid(productId);
+  const product = await connectApi.selectById(idUrl);
   
   const form = document.createElement("form")
   form.className = "form__product"
