@@ -46,6 +46,19 @@ async function getProduct() {
 
   console.table(product);
 
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const titulo = document.querySelector("[data-titulo]").value;
+    const preco = document.querySelector("[data-preco]").value;
+    const imagem = document.querySelector("[data-imagem]").value;
+    const categoria = document.querySelector("[data-categoria]").value;
+    const descricao = document.querySelector("[data-descricao]").value;
+
+    await connectApi.editProducts(idUrl, titulo, preco, imagem, categoria, descricao);
+    window.location.href = "../../pages/all-products.html";
+  });
+
 }
 
 getProduct();

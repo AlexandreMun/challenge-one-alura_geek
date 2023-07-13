@@ -76,5 +76,5 @@ export const connectApi = {
   searchProducts,
   deleteProducts,
   editProducts,
-  biid,
+  selectById,
 };
