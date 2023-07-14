@@ -6,8 +6,8 @@ const formData = document.querySelector("[data-edit");
 
 // Cria formulario com os dados do produto
 function createForm(titulo, preco, imagem, categoria, descricao) {
-  const form = document.createElement("form")
-  form.className = "form__product"
+  const form = document.createElement("form");
+  form.className = "form__product";
   form.innerHTML = `
     <h2 class="product__title">Editar produto</h2>
     <div class="product__area">
@@ -39,7 +39,9 @@ function createForm(titulo, preco, imagem, categoria, descricao) {
       <span>Descrição do produto</span>
     </div>
     <button class="product__btn" id="product__btn" type="submit">Editar produto</button>
-  `
+  `;
+  
+  return form;
 }
 
 // Edita o produto
@@ -52,7 +54,6 @@ async function editProduct(event) {
   const categoria = document.querySelector("[data-categoria]").value;
   const descricao = document.querySelector("[data-descricao]").value;
 
-  // Envia os dados para editar o produto
   await connectApi.editProducts(idUrl, titulo, preco, imagem, categoria, descricao);
   window.location.href = "../../pages/all-products.html";
 }
@@ -61,7 +62,8 @@ async function editProduct(event) {
 async function loadProduct() {
   const product = await connectApi.selectById(idUrl);
   
-  formData.appendChild(createForm(product.titulo, product.preco, product.imagem, product.categoria, product.descricao))
+  const form = createForm(product.titulo, product.preco, product.imagem, product.categoria, product.descricao);
+  formData.appendChild(form);
 
   form.addEventListener("submit", async (event) => editProduct(event));
 }
