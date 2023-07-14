@@ -1,10 +1,12 @@
+import { capitalizeFirstLetter, capitalizeWords } from './checkCapitalize.js';
+import checkPreco from "./checkPreco.js";
 import { connectApi } from "./connectApi.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const idUrl = urlParams.get("id");
-const formData = document.querySelector("[data-edit");
+const formData = document.querySelector("[data-edit]");
 
-// Cria formulario com os dados do produto
+// Cria formulário com os dados do produto
 function createForm(titulo, preco, imagem, categoria, descricao) {
   const form = document.createElement("form");
   form.className = "form__product";
@@ -48,11 +50,11 @@ function createForm(titulo, preco, imagem, categoria, descricao) {
 async function editProduct(event) {
   event.preventDefault();
 
-  const titulo = document.querySelector("[data-titulo]").value;
-  const preco = document.querySelector("[data-preco]").value;
+  const titulo = capitalizeWords(document.querySelector("[data-titulo]").value);
+  const preco = checkPreco(document.querySelector("[data-preco]").value);
   const imagem = document.querySelector("[data-imagem]").value;
-  const categoria = document.querySelector("[data-categoria]").value;
-  const descricao = document.querySelector("[data-descricao]").value;
+  const categoria = capitalizeWords(document.querySelector("[data-categoria]").value);
+  const descricao = capitalizeFirstLetter(document.querySelector("[data-descricao]").value);
 
   await connectApi.editProducts(idUrl, titulo, preco, imagem, categoria, descricao);
   window.location.href = "../../pages/all-products.html";
