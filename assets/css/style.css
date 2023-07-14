@@ -6,6 +6,10 @@
   --secondary-blue: #EAF2FD;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   transition: 1s;

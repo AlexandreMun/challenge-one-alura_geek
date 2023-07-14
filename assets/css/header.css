@@ -65,6 +65,7 @@
   background: none;
   font-size: 1rem;
   color: var(--primary-blue);
+  text-decoration: none;
 }
 
 .search__btn {
