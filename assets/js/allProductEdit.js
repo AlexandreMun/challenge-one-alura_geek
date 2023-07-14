@@ -11,13 +11,11 @@ async function editProduct(event) {
       element.parentNode.parentNode.parentNode.parentNode.getAttribute(
         "data-id"
       );
+
+    const url = `../../pages/edit-product.html?id=${selectedId}`;
+
+    window.location.href = url;
   }
-
-  const url = `../../pages/edit-product.html?id=${selectedId}`;
-
-  window.location.href = url;
 }
 
 list.addEventListener("click", async (event) => editProduct(event));
-
-//

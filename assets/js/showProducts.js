@@ -28,7 +28,7 @@ export default function createCard(id, titulo, preco, imagem) {
       </div>
     </div>
     <h2 class="product__title" data-title="${titulo}">${titulo}</h2>
-    <p class="product__price">${preco}</p>
+    <p class="product__price">R$ ${preco}</p>
     <p class="product__code" value="${id}">#${id}</p>
   `;
 
@@ -38,7 +38,7 @@ export default function createCard(id, titulo, preco, imagem) {
 }
 
 async function listProduct() {
-  const listApi = await connectApi.showVideos();
+  const listApi = await connectApi.showProducts();
 
   listApi.forEach((product) => {
     list.appendChild(

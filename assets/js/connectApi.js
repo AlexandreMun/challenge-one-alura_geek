@@ -1,19 +1,19 @@
-async function showVideos() {
-  const conexao = await fetch("http://localhost:3000/produtos");
+async function showProducts() {
+  const conexao = await fetch("https://64b1905c062767bc482662cb.mockapi.io/produto");
   const conexaoConvertida = await conexao.json();
 
   return conexaoConvertida;
 }
 
 async function createProducts(titulo, preco, imagem, categoria, descricao) {
-  const conexao = await fetch("http://localhost:3000/produtos", {
+  const conexao = await fetch("https://64b1905c062767bc482662cb.mockapi.io/produto", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
     },
     body: JSON.stringify({
       titulo: titulo,
-      preco: `R$ ${preco}`,
+      preco: preco,
       imagem: imagem,
       categoria: categoria,
       descricao: descricao,
@@ -25,21 +25,21 @@ async function createProducts(titulo, preco, imagem, categoria, descricao) {
 }
 
 async function searchProducts(id) {
-  const conexao = await fetch(`http://localhost:3000/produtos?q=${id}`);
+  const conexao = await fetch(`https://64b1905c062767bc482662cb.mockapi.io/produto?q=${id}`);
   const conexaoConvertida = await conexao.json();
 
   return conexaoConvertida;
 }
 
 async function selectById(id) {
-  const conexao = await fetch(`http://localhost:3000/produtos/${id}`);
+  const conexao = await fetch(`https://64b1905c062767bc482662cb.mockapi.io/produto/${id}`);
   const conexaoConvertida = await conexao.json();
 
   return conexaoConvertida;
 }
 
 async function deleteProducts(id) {
-  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+  const conexao = await fetch(`https://64b1905c062767bc482662cb.mockapi.io/produto/${id}`, {
     method: "DELETE",
     headers: {
       "Content-type": "application/json",
@@ -51,7 +51,7 @@ async function deleteProducts(id) {
 }
 
 async function editProducts(id, titulo, preco, imagem, categoria, descricao) {
-  const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+  const conexao = await fetch(`https://64b1905c062767bc482662cb.mockapi.io/produto/${id}`, {
     method: "PUT",
     headers: {
       "Content-type": "application/json",
@@ -71,7 +71,7 @@ async function editProducts(id, titulo, preco, imagem, categoria, descricao) {
 }
 
 export const connectApi = {
-  showVideos,
+  showProducts,
   createProducts,
   searchProducts,
   deleteProducts,
