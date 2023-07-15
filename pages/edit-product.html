@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../assets/css/form-product/product-btn.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
+    <link rel="stylesheet" href="../assets/css/error-message.css" />
     <link rel="stylesheet" href="../assets/css/logo-contact.css" />
     <link rel="stylesheet" href="../assets/css/form-title.css" />
     <link rel="stylesheet" href="../assets/css/form-area/form-area.css" />
@@ -137,8 +138,16 @@
         <form action="" class="form">
           <h2 class="form__title">Fale Conosco</h2>
           <div class="form__area">
-            <input class="form__area__input" type="text" id="nome" required />
+            <input
+              class="form__area__input"
+              type="text"
+              id="nome"
+              minlength="3"
+              maxlength="40"
+              required
+            />
             <span>Nome</span>
+            <div id="nomeError" class="error__message"></div>
           </div>
 
           <div class="form__area">
@@ -148,11 +157,14 @@
               cols="40"
               id="mensagem"
               name="mensagem"
+              minlength="5"
+              maxlength="120"
               required
             ></textarea>
             <span>Escreva sua mensagem</span>
+            <div id="mensagemError" class="error__message"></div>
           </div>
-          <button class="form__btn" id="form__btn">Enviar mensagem</button>
+          <button class="form__btn" id="form__btn" data-form-btn>Enviar mensagem</button>
         </form>
       </div>
       <div class="dev-info">
@@ -163,6 +175,7 @@
 
     <script type="module" src="../assets/js/connectApi.js"></script>
     <script type="module" src="../assets/js/editProduct.js"></script>
+    <script type="module" src="../assets/js/contactValidation.js"></script>
 
   </body>
 </html>
