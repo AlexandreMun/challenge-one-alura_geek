@@ -80,15 +80,17 @@
     <form action="" class="form__login">
       <h2 class="login__title">Iniciar Sessão</h2>
       <div class="login__area">
-        <input class="login__area__input" type="email" id="nome" required />
+        <input class="login__area__input" type="email" id="email" required />
         <span>Escreva seu email</span>
+        <div id="emailError" class="error__message"></div>
       </div>
-
+  
       <div class="login__area">
-        <input class="login__area__input" type="password" id="nome" required />
+        <input class="login__area__input" type="password" id="senha" required />
         <span>Escreva sua senha</span>
+        <div id="senhaError" class="error__message"></div>
       </div>
-      <button class="form__login__btn" id="login__btn">Entrar</button>
+      <a class="form__login__btn" id="login__btn" href="./all-products.html">Entrar</a>  
     </form>
   </main>
 
@@ -148,6 +150,7 @@
   </footer>
 
   <script type="module" src="../assets/js/connectApi.js"></script>
+  <script type="module" src="../assets/js/loginValidation.js"></script>
   <script type="module" src="../assets/js/contactValidation.js"></script>
 
 </body>
