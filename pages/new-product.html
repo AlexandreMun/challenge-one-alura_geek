@@ -83,20 +83,24 @@
       <form class="form__product" data-form>
         <h2 class="product__title">Adicionar novo produto</h2>
         <div class="product__area">
-          <input class="product__area__input" type="text" id="nome" data-imagem required />
+          <input class="product__area__input" type="text" id="url" data-imagem required />
           <span>URL da imagem</span>
+          <div id="urlError" class="error__message"></div>
         </div>
         <div class="product__area">
-          <input class="product__area__input" type="text" id="nome" data-categoria required />
+          <input class="product__area__input" type="text" id="categoria" data-categoria required />
           <span>Categoria</span>
+          <div id="categoriaError" class="error__message"></div>
         </div>
         <div class="product__area">
-          <input class="product__area__input" type="text" id="nome" data-titulo required />
+          <input class="product__area__input" type="text" id="nome" maxlength="20" data-titulo required />
           <span>Nome do produto</span>
+          <div id="tituloError" class="error__message"></div>
         </div>
         <div class="product__area">
-          <input class="product__area__input" type="text" id="nome" data-preco required />
+          <input class="product__area__input" type="text" id="preco" data-preco required />
           <span>Preço do produto</span>
+          <div id="precoError" class="error__message"></div>
         </div>
         <div class="product__area">
           <textarea
@@ -105,10 +109,12 @@
             cols="40"
             id="mensagem"
             name="mensagem"
+            maxlength="150"
             required
             data-descricao
           ></textarea>
           <span>Descrição do produto</span>
+          <div id="decricaoError" class="error__message"></div>
         </div>
         <button class="product__btn" id="product__btn" type="submit">Adicionar produto</button>
       </form>
@@ -170,6 +176,7 @@
     </footer>
 
     <script type="module" src="../assets/js/createProduct.js"></script>
+    <script type="module" src="../assets/js/newProductValidation.js"></script>
     <script type="module" src="../assets/js/contactValidation.js"></script>
 
   </body>

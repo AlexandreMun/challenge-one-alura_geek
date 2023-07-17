@@ -12,23 +12,23 @@ function createForm(titulo, preco, imagem, categoria, descricao) {
   form.className = "form__product";
   form.innerHTML = `
     <h2 class="product__title">Editar produto</h2>
-    <div class="product__area">
+    <div class="product__area--edit">
       <input class="product__area__input" type="text" id="nome" value="${imagem}" data-imagem required />
       <span>URL da imagem</span>
     </div>
-    <div class="product__area">
+    <div class="product__area--edit">
       <input class="product__area__input" type="text" id="nome" value="${categoria}" data-categoria required />
       <span>Categoria</span>
     </div>
-    <div class="product__area">
+    <div class="product__area--edit">
       <input class="product__area__input" type="text" id="nome" value="${titulo}" data-titulo required />
       <span>Nome do produto</span>
     </div>
-    <div class="product__area">
+    <div class="product__area--edit">
       <input class="product__area__input" type="text" id="nome" value="${preco}" data-preco required />
       <span>Preço do produto</span>
     </div>
-    <div class="product__area">
+    <div class="product__area--edit">
       <textarea
         class="product__area__textarea"
         rows="5"

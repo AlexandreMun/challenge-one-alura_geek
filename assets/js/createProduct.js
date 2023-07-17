@@ -23,4 +23,5 @@ async function createProduct(event) {
   window.location.href = "../../pages/all-products.html";
 }
 
+
 form.addEventListener("submit", (event) => createProduct(event));

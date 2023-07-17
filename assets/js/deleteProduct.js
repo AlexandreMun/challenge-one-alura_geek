@@ -13,6 +13,8 @@ async function deleteProduct(event) {
       );
 
     await connectApi.deleteProducts(selectedId);
+    
+    location.reload();
   }
 }
 

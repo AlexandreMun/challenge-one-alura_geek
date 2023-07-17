@@ -1,4 +1,8 @@
 .product__area {
   position: relative;
+}
+
+.product__area--edit {
+  position: relative;
   margin-bottom: 1.5rem;
 }
