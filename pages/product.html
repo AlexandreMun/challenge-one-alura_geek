@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/container.css" />
     <link rel="stylesheet" href="../assets/css/details/details.css" />
+    <link rel="stylesheet" href="../assets/css/details/product-details.css" />
     <link rel="stylesheet" href="../assets/css/details/details-img.css" />
     <link rel="stylesheet" href="../assets/css/details/details-info.css" />
     <link rel="stylesheet" href="../assets/css/details-info/info-title.css" />
@@ -69,11 +70,12 @@
   <body>
     <header class="header">
       <div class="header__right">
-        <img
-          src="../assets/img/Logo.png"
-          alt="Logo da Alura Geek"
-          class="logo"
-        />
+        <a href="../index.html">
+          <img
+            src="../assets/img/Logo.png"
+            alt="Logo da Alura Geek"
+            class="logo"
+        /></a>
         <div class="search">
           <form class="search__form">
             <input
@@ -94,20 +96,22 @@
     </header>
 
     <main class="container __details">
-      <section class="details">
-        <img src="../assets/img/detail-img.png" alt="" class="details__img" />
-        <div class="details__info">
-          <h2 class="info__title">Produto XYZ</h2>
-          <p class="info__price">R$ 60,00</p>
-          <p class="info__desc">
-            Voluptas voluptatum quibusdam similique, class debitis alias
-            maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
-            minima malesuada habitasse distinctio sequi aliqua malesuada.
-            Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
-            Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
-            placeat faucibus, dolorum do. Animi porta anim magnam
-          </p>
-        </div>
+      <section class="details" data-details>
+        <!-- <div class="product__details">
+          <img src="../assets/img/detail-img.png" alt="" class="details__img" />
+          <div class="details__info">
+            <h2 class="info__title">Produto XYZ</h2>
+            <p class="info__price">R$ 60,00</p>
+            <p class="info__desc">
+              Voluptas voluptatum quibusdam similique, class debitis alias
+              maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
+              minima malesuada habitasse distinctio sequi aliqua malesuada.
+              Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
+              Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
+              placeat faucibus, dolorum do. Animi porta anim magnam
+            </p>
+          </div>
+        </div> -->
       </section>
 
       <section class="products-container">
@@ -201,7 +205,9 @@
             <span>Escreva sua mensagem</span>
             <div id="mensagemError" class="error__message"></div>
           </div>
-          <button class="form__btn" id="form__btn" data-form-btn>Enviar mensagem</button>
+          <button class="form__btn" id="form__btn" data-form-btn>
+            Enviar mensagem
+          </button>
         </form>
       </div>
       <div class="dev-info">
@@ -211,6 +217,7 @@
     </footer>
 
     <script type="module" src="../assets/js/connectApi.js"></script>
+    <script type="module" src="../assets/js/loadDetailsProduct.js"></script>
     <script type="module" src="../assets/js/contactValidation.js"></script>
   </body>
 </html>

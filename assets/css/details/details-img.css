@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 0) and (max-width: 767px) {
 .details__img {
-  width: fit-content;
+  width: 100%;
   height: 12.125rem;
 }
 }
