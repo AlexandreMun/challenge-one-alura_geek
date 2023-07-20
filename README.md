@@ -8,8 +8,7 @@ https://www.figma.com/file/itJpWbvHxSUcUeMPy1lmof/AluraGeek
 https://alexandremun.github.io/challenge-one-alura_geek/
 
 # Login
-Email: test@test.com
-Senha: test
+Email: test@test.com - Senha: test
 
 # Imagens da Aplicação
 ![image](https://github.com/AlexandreMun/challenge-one-alura_geek/assets/51013093/b7c468be-cf3f-4291-8bb9-646ccc82e8e1)
