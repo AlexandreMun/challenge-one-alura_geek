@@ -17,3 +17,6 @@ Email: test@test.com - Senha: test
 ![image](https://github.com/AlexandreMun/challenge-one-alura_geek/assets/51013093/b7abb7aa-a56b-4c22-b673-3b076421421d)
 ![image](https://github.com/AlexandreMun/challenge-one-alura_geek/assets/51013093/63e4f96e-858f-430a-b19e-488868967b5f)
 ![image](https://github.com/AlexandreMun/challenge-one-alura_geek/assets/51013093/f4cf3f7e-d2f6-454d-8009-61e67c0f0cd2)
+
+# Badge
+![image](https://github.com/AlexandreMun/challenge-one-alura_geek/assets/51013093/6250d738-5cca-4917-a126-a38edd1b1f49)
