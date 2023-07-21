@@ -1,6 +1,6 @@
 import { connectApi } from "./connectApi.js";
 
-const list = document.querySelector("[data-list");
+const list = document.querySelector("[data-list]");
 
 export default function createCard(id, titulo, preco, imagem) {
   const product = document.createElement("li");

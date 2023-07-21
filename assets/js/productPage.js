@@ -1,17 +1,12 @@
-const productBtn = document.querySelector("[data-product]");
-
-async function detailsProduct(event) {
+function detailsProduct(event) {
   event.preventDefault();
-  const element = event.target;
-  let selectedId;
+  const element = event.target.closest("[data-product-id]");
+  if (!element) return;
 
-  if (element.id == "view-product") {
-    selectedId = element.parentNode.getAttribute("data-id");
+  const selectedId = element.parentNode.getAttribute("data-id");
+  const url = `../../pages/product.html?id=${selectedId}`;
 
-    const url = `../../pages/product.html?id=${selectedId}`;
-
-    window.location.href = url;
-  }
+  window.location.href = url;
 }
 
-productBtn.addEventListener("click", async (event) => detailsProduct(event));
+document.addEventListener("click", detailsProduct);
