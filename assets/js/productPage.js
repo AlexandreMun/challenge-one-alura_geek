@@ -4,9 +4,9 @@ function detailsProduct(event) {
   if (!element) return;
 
   const selectedId = element.parentNode.getAttribute("data-id");
-  const url = new URL(`../../pages/product.html?id=${selectedId}`, window.location.href).href;
-
-  window.location.href = url;
+  const url = new URL(`pages/product.html?id=${selectedId}`, location.origin);
+  
+  window.location.href = url.href;
 }
 
 document.addEventListener("click", detailsProduct);
