@@ -4,7 +4,7 @@ function detailsProduct(event) {
   if (!element) return;
 
   const selectedId = element.parentNode.getAttribute("data-id");
-  const url = `${window.location.origin}/pages/product.html?id=${selectedId}`;
+  const url = new URL(`../../pages/product.html?id=${selectedId}`, window.location.href).href;
 
   window.location.href = url;
 }
