@@ -1,10 +1,5 @@
 import { connectApi } from "./connectApi.js";
 
-const mainContainer = document.querySelector(".container");
-
-// Armazena as categorias
-const categorias = {};
-
 // Cria o card do produto
 function createCard(id, titulo, preco, imagem) {
   const product = document.createElement("div");
@@ -23,7 +18,9 @@ function createCard(id, titulo, preco, imagem) {
 }
 
 async function listProduct() {
+  const mainContainer = document.querySelector(".container");
   const listApi = await connectApi.showProducts();
+  const categorias = {};
 
   listApi.forEach((product) => {
     // Verifica se a categoria existe no objeto
@@ -82,4 +79,4 @@ async function listProduct() {
   console.table(categorias);
 }
 
-listProduct();
+document.addEventListener("DOMContentLoaded", listProduct())
