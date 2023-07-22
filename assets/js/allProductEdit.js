@@ -12,9 +12,9 @@ async function editProduct(event) {
         "data-id"
       );
 
-    const url = new URL(`pages/edit-product.html?id=${selectedId}`, location.origin);
+    const url = `./edit-product.html?id=${selectedId}`;
     
-    window.location.href = url.href;
+    window.location.href = url;
   }
 }
 
