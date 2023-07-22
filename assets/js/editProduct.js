@@ -57,7 +57,7 @@ async function editProduct(event) {
   const descricao = capitalizeFirstLetter(document.querySelector("[data-descricao]").value);
 
   await connectApi.editProducts(idUrl, titulo, preco, imagem, categoria, descricao);
-  window.location.href = "../../pages/all-products.html";
+  window.location.href = "./all-products.html";
 }
 
 // Carrega os dados e edita o produto

@@ -90,7 +90,7 @@ async function createProduct(event) {
     descricaoTemp
   );
 
-  window.location.href = "../../pages/all-products.html";
+  window.location.href = "./all-products.html";
 }
 
 form.addEventListener("submit", (event) => createProduct(event));
