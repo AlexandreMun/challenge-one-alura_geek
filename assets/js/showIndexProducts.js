@@ -1,16 +1,11 @@
 import { connectApi } from "./connectApi.js";
 
-const starWars = document.getElementById("star-wars");
-const consoles = document.getElementById("consoles");
-const diversos = document.getElementById("diversos");
+const mainContainer = document.querySelector(".container");
 
-// Armazena produtos em cada categoria
-const categorias = {
-  "Star Wars": [],
-  "Consoles": [],
-  "Diversos": [],
-};
+// Armazena as categorias
+const categorias = {};
 
+// Cria o card do produto
 function createCard(id, titulo, preco, imagem) {
   const product = document.createElement("div");
 
@@ -31,34 +26,60 @@ async function listProduct() {
   const listApi = await connectApi.showProducts();
 
   listApi.forEach((product) => {
-    // Adiciona cada produto à categoria correspondente
-    if (product.categoria === "Star Wars") {
-      categorias["Star Wars"].push(product);
-    } else if (product.categoria === "Consoles") {
-      categorias["Consoles"].push(product);
-    } else if (product.categoria === "Diversos") {
-      categorias["Diversos"].push(product);
+    // Verifica se a categoria existe no objeto
+    if (!categorias[product.categoria]) {
+      categorias[product.categoria] = [];
     }
+
+    // Adiciona a categoria
+    categorias[product.categoria].push(product);
   });
 
-  // Adicione os produtos na pagina
-  categorias["Star Wars"].forEach((product) => {
-    starWars.appendChild(
-      createCard(product.id, product.titulo, product.preco, product.imagem)
-    );
-  });
+  // Adiciona os produtos nas categorias criando o html
+  for (const categoria in categorias) {
+    const categoriaContainer = document.createElement("section");
+    categoriaContainer.className = "products-container";
 
-  categorias["Consoles"].forEach((product) => {
-    consoles.appendChild(
-      createCard(product.id, product.titulo, product.preco, product.imagem)
-    );
-  });
+    const categoriaHeader = document.createElement("div");
+    categoriaHeader.className = "products__header";
 
-  categorias["Diversos"].forEach((product) => {
-    diversos.appendChild(
-      createCard(product.id, product.titulo, product.preco, product.imagem)
-    );
-  });
+    const categoriaTitle = document.createElement("h2");
+    categoriaTitle.className = "products__header__title";
+    categoriaTitle.textContent = categoria;
+    categoriaHeader.appendChild(categoriaTitle);
+
+    const categoriaMore = document.createElement("div");
+    categoriaMore.className = "products__header__more";
+
+    const categoriaLink = document.createElement("a");
+    categoriaLink.href = "";
+    categoriaLink.className = "products__header__more__text";
+    categoriaLink.textContent = "Ver Mais";
+    categoriaMore.appendChild(categoriaLink);
+
+    const categoriaArrow = document.createElement("i");
+    categoriaArrow.className = "fa-sharp fa-solid fa-arrow-right";
+    categoriaMore.appendChild(categoriaArrow);
+
+    categoriaHeader.appendChild(categoriaMore);
+    categoriaContainer.appendChild(categoriaHeader);
+
+    const categoriaProducts = document.createElement("div");
+    categoriaProducts.className = "products";
+    categoriaProducts.id = categoria.toLowerCase().replace(" ", "-");
+    categoriaContainer.appendChild(categoriaProducts);
+
+    // Chama a função de criar o card do produto e junta ao html
+    categorias[categoria].forEach((product) => {
+      categoriaProducts.appendChild(
+        createCard(product.id, product.titulo, product.preco, product.imagem)
+      );
+    });
+
+    mainContainer.appendChild(categoriaContainer);
+  }
+
+  console.table(categorias);
 }
 
 listProduct();
